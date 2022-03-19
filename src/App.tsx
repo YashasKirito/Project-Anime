@@ -1,6 +1,5 @@
-import "./App.css";
+import "./App.scss";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import { routes } from "./routes";
 
 function App() {
@@ -8,7 +7,11 @@ function App() {
     <div className="App">
       <Routes>
         {routes.map((route) => (
-          <Route path={route.path} element={<route.Element />} />
+          <Route
+            key={route.path}
+            path={route.path}
+            element={<route.Element />}
+          />
         ))}
         <Route
           path="*"

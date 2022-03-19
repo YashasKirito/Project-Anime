@@ -1,0 +1,17 @@
+.video-player {
+  height: 60vh;
+  position: relative;
+
+  .playerblocker {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    user-select: none;
+  }
+
+  iframe {
+    height: 60vh;
+  }
+}
