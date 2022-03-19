@@ -1,0 +1,30 @@
+.tile {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+
+  img {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+  }
+
+  span {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    opacity: 0;
+    left: 8%;
+    bottom: 2%;
+    transition: opacity 0.2s, bottom 0.2s;
+  }
+
+  &:hover {
+    span {
+      opacity: 1;
+      bottom: 5%;
+    }
+  }
+}
