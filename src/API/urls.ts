@@ -1,7 +1,10 @@
 export const AnimeUrls = {
   // search endpoint
-  search: "/anime/",
+  search: "/anime",
 
   // specific endpoints
-  getAnimeById: "/anime/",
+  getAnimeById: "/anime",
+  getSeasonNow: "/seasons/now",
+  getTopAnime: "/top/anime",
+  getWatchRecentEpisodes: "/watch/episodes",
 };
