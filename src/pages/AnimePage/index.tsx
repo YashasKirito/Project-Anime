@@ -11,12 +11,13 @@ import "./styles.scss";
 const AnimePage: React.FC = () => {
   let { animeId } = useParams();
   const [anime, setAnime] = useState<IAnimeEntry | null>(null);
+  const [error, setError] = useState(false);
   useEffect(() => {
     if (animeId) {
       const { url, params } = getAnimeById(animeId);
       API.get(url, params)
         .then((res) => setAnime(res.data.data))
-        .catch((err) => console.log(err));
+        .catch((err) => setError(err));
     }
   }, [animeId]);
 
@@ -69,7 +70,9 @@ const AnimePage: React.FC = () => {
       </div>
     </div>
   ) : (
-    <div className="error">Sorry! Could not find the requested Anime</div>
+    <div className="error">
+      {error ? "Sorry! Could not find the requested Anime" : "Loading..."}
+    </div>
   );
 };
 

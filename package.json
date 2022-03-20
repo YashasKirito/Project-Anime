@@ -20,6 +20,7 @@
     "@honkhonk/vite-plugin-svgr": "^1.1.0",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "@types/youtube-player": "^5.5.6",
     "@vitejs/plugin-react": "^1.0.7",
     "gh-pages": "^3.2.3",
     "sass": "^1.49.9",
