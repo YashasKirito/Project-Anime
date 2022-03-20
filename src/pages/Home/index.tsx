@@ -1,5 +1,7 @@
+import Header from "../../organisms/Header";
+
 const Home: React.FC = () => {
-  return <h1>Welcome Home</h1>;
+  return <Header />;
 };
 
 export default Home;

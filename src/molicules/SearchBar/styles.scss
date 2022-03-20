@@ -1,0 +1,52 @@
+@import "../../common/scss/variables.scss";
+
+.search-bar-hidden {
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transition: width 0.5s, border 0.5s;
+  width: 40px;
+  &:hover {
+    border: 1px solid $primary-color;
+    width: 160px;
+    input {
+      opacity: 1;
+    }
+  }
+
+  input {
+    border: none;
+    background: none;
+    border-color: none;
+    outline: none;
+    color: $primary-color;
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
+  }
+  img {
+    width: 20px;
+  }
+}
+
+.search-bar-show {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid $primary-color;
+  transition: width 0.5s, border 0.5s;
+
+  input {
+    border: none;
+    background: none;
+    border-color: none;
+    outline: none;
+    color: $primary-color;
+  }
+
+  img {
+    width: 20px;
+  }
+}

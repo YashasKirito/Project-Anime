@@ -1,0 +1,56 @@
+@import "./common/scss/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka-Light.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inspiration";
+  src: url(./assets/fonts/Inspiration.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary-color;
+  background-color: $dark-background;
+  font-weight: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
