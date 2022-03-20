@@ -1,30 +1,50 @@
 .tile {
-  width: 200px;
-  height: 300px;
-  border-radius: 20px;
+  width: 160px;
+  height: 240px;
+  border-radius: 10px;
   position: relative;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+
+  .blur {
+    position: absolute;
+    background-color: black;
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    transition: opacity 0.2s;
+  }
 
   img {
     width: inherit;
     height: inherit;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   span {
     color: white;
-    font-weight: 700;
+    width: 80%;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     position: absolute;
     opacity: 0;
     left: 8%;
     bottom: 2%;
     transition: opacity 0.2s, bottom 0.2s;
+    z-index: 2;
   }
 
   &:hover {
     span {
       opacity: 1;
       bottom: 5%;
+    }
+
+    .blur {
+      opacity: 0.6;
     }
   }
 }

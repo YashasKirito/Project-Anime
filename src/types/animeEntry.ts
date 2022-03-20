@@ -2,9 +2,16 @@ interface IAnimeEntry {
   mal_id: number;
   url: string;
   images: {
-    image_url: string;
-    small_image_url: string;
-    large_image_url: string;
+    jpg: {
+      image_url: string;
+      small_image_url: string;
+      large_image_url: string;
+    };
+    webp: {
+      image_url: string;
+      small_image_url: string;
+      large_image_url: string;
+    };
   };
   trailer: {
     youtube_id: string;

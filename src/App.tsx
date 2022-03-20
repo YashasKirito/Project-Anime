@@ -1,10 +1,12 @@
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "./routes";
+import Header from "./organisms/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         {routes.map((route) => (
           <Route

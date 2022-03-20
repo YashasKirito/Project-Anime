@@ -1,7 +1,11 @@
-import Header from "../../organisms/Header";
+import TopAnimeTileSet from "../../organisms/TopAnimeTileSet";
 
 const Home: React.FC = () => {
-  return <Header />;
+  return (
+    <div>
+      <TopAnimeTileSet />
+    </div>
+  );
 };
 
 export default Home;
