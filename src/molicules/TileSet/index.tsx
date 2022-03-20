@@ -14,6 +14,7 @@ const TileSet: React.FC<ITileSet> = ({ tiles, showMore }) => {
       {tiles.map((tile) => (
         <Tile
           key={tile.mal_id}
+          malId={tile.mal_id}
           title={tile.title}
           imageUrl={tile.images.webp.large_image_url}
         />

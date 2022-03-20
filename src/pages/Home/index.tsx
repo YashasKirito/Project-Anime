@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <VideoHOC animeEntry={animeEntry} />
+      <VideoHOC animeEntry={animeEntry} showTitle />
       <TopAnimeTileSet animeData={animeNow.animeEntries} />
     </div>
   );

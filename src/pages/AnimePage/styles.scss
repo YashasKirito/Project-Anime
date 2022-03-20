@@ -1,0 +1,49 @@
+.anime-page {
+  .anime-desc {
+    padding: 20px 10%;
+
+    .synopsys {
+      margin-top: 40px;
+      p {
+        padding: 20px 0;
+        word-spacing: 2px;
+      }
+    }
+    .anime-expose {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      .anime-details {
+        .title {
+          margin-bottom: 20px;
+        }
+
+        .data {
+          margin-top: 5px;
+        }
+
+        .anime-rating {
+          .ratings {
+            margin-right: 20px;
+
+            .rating-number {
+              font-weight: 500;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.error {
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

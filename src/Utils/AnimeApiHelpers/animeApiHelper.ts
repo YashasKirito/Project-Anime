@@ -21,7 +21,7 @@ export const searchAnime = (params: SearchObjectType) => {
   return { url: AnimeUrls.search, params };
 };
 
-export const getAnimeById = (id: number): IReturnType => {
+export const getAnimeById = (id: string): IReturnType => {
   return { url: AnimeUrls.getAnimeById + "/" + id.toString(), params: {} };
 };
 

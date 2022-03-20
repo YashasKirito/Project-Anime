@@ -41,6 +41,7 @@ interface IAnimeEntry {
   background: string;
   season: string;
   year: number;
+  genres: { mal_id: number; type: string; name: string; url: string }[];
 }
 
 export default IAnimeEntry;
