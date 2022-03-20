@@ -1,0 +1,30 @@
+@import "../../common/scss/variables.scss";
+
+.video-container-hoc {
+  position: relative;
+
+  .title-container {
+    width: 30%;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+
+    h1 {
+      text-shadow: 0px 0px 10px rgba(0, 0, 0);
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      color: $primary-color;
+      background-color: #3e3e3e;
+
+      &:hover {
+        background-color: $dark-light;
+      }
+    }
+  }
+}

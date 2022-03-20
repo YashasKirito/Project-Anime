@@ -3,11 +3,11 @@
 .search-bar-hidden {
   padding: 5px;
   overflow: hidden;
+  width: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  transition: width 0.5s, border 0.5s;
-  width: 40px;
+  transition: width 0.5s, background-color 0.5s, border 0.5s;
   &:hover {
     border: 1px solid $primary-color;
     background-color: $dark-background;
