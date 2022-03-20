@@ -10,6 +10,7 @@
   width: 40px;
   &:hover {
     border: 1px solid $primary-color;
+    background-color: $dark-background;
     width: 160px;
     input {
       opacity: 1;
@@ -35,6 +36,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: $dark-background;
   border: 1px solid $primary-color;
   transition: width 0.5s, border 0.5s;
 

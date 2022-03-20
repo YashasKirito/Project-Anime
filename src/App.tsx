@@ -7,23 +7,25 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        {routes.map((route) => (
+      <div style={{ marginTop: "-80px" }}>
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<route.Element />}
+            />
+          ))}
           <Route
-            key={route.path}
-            path={route.path}
-            element={<route.Element />}
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
           />
-        ))}
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
-      </Routes>
+        </Routes>
+      </div>
     </div>
   );
 }
