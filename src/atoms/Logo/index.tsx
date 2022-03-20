@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Logo = () => {
   return (
     <div
@@ -8,7 +10,7 @@ const Logo = () => {
         userSelect: "none",
       }}
     >
-      Anime
+      <Link to="/">Anime</Link>
     </div>
   );
 };
