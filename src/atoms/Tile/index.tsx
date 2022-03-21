@@ -11,7 +11,7 @@ const Tile: React.FC<ITile> = ({ imageUrl, title, malId }) => {
   let navigate = useNavigate();
 
   const onClick = () => {
-    navigate(`anime/${malId}`);
+    navigate(`/anime/${malId}`);
   };
 
   return (

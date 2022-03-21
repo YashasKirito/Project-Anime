@@ -11,7 +11,7 @@
   &:hover {
     border: 1px solid $primary-color;
     background-color: $dark-background;
-    width: 160px;
+    width: 420px;
     input {
       opacity: 1;
     }
@@ -25,6 +25,7 @@
     color: $primary-color;
     opacity: 0;
     transition: opacity 0.5s 0.2s;
+    width: 400px;
   }
   img {
     width: 20px;
@@ -45,6 +46,7 @@
     background: none;
     border-color: none;
     outline: none;
+    width: 400px;
     color: $primary-color;
   }
 

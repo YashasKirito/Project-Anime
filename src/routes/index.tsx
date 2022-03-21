@@ -1,5 +1,6 @@
 import AnimePage from "../pages/AnimePage";
 import Home from "../pages/Home";
+import Search from "../pages/SearchResults";
 
 export const routes = [
   {
@@ -9,5 +10,9 @@ export const routes = [
   {
     path: "anime/:animeId",
     Element: AnimePage,
+  },
+  {
+    path: "search",
+    Element: Search,
   },
 ];
