@@ -1,4 +1,3 @@
-import Video from "../../atoms/Video";
 import { useAnimeNow } from "../../hooks/context/useAnimeNow";
 import VideoHOC from "../../molicules/VideoHOC";
 import TopAnimeTileSet from "../../organisms/TopAnimeTileSet";
