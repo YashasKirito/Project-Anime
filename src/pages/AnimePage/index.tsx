@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../../API";
+import Spin from "../../atoms/Spin";
 import Tile from "../../atoms/Tile";
 import VideoHOC from "../../molicules/VideoHOC";
 import IAnimeEntry from "../../types/animeEntry";
@@ -51,10 +52,16 @@ const AnimePage: React.FC = () => {
             <div className="data">
               <span className="bold">Status: </span> {anime.status}
             </div>
-            {/* <div className="data">
-            <span className="bold">Aired: </span>{" "}
-            {anime.aired.from + anime.aired.to}
-          </div> */}
+            <div className="data">
+              <span className="bold">Aired: </span>{" "}
+              {` ${
+                anime.aired.from
+                  ? new Date(anime.aired.from).toDateString()
+                  : "?"
+              } -- ${
+                anime.aired.to ? new Date(anime.aired.to).toDateString() : "?"
+              }`}
+            </div>
             <div className="data">
               <span className="bold">Genres: </span>{" "}
               {anime.genres.map((genre) => genre.name).join(", ")}
@@ -71,7 +78,7 @@ const AnimePage: React.FC = () => {
     </div>
   ) : (
     <div className="error">
-      {error ? "Sorry! Could not find the requested Anime" : "Loading..."}
+      {error ? "Sorry! Could not find the requested Anime" : <Spin />}
     </div>
   );
 };

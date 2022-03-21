@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Spin from "../../atoms/Spin";
 import Video from "../../atoms/Video";
 import IAnimeEntry from "../../types/animeEntry";
 
@@ -25,7 +26,9 @@ const VideoHOC: React.FC<IVideoHOC> = ({ animeEntry, showTitle }) => {
         </div>
       )}
     </div>
-  ) : null;
+  ) : (
+    <Spin />
+  );
 };
 
 export default VideoHOC;

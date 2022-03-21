@@ -1,4 +1,5 @@
 import YouTube from "react-youtube";
+import Spin from "../Spin";
 import "./styles.scss";
 
 interface IVideoProps {
@@ -18,7 +19,11 @@ const Video: React.FC<IVideoProps> = ({ videoId }) => {
       ) : (
         <span>loading..</span>
       )} */}
-      {videoId ? (
+      {videoId === null ? (
+        <span className="error">
+          Sorry! Looks like there is no trailer for this Anime.
+        </span>
+      ) : videoId ? (
         <YouTube
           videoId={videoId} // defaults -> null
           id={videoId} // defaults -> null
@@ -52,7 +57,7 @@ const Video: React.FC<IVideoProps> = ({ videoId }) => {
           // onPlaybackQualityChange={(e) => console.log("Ready to play", e)} // defaults -> noop
         />
       ) : (
-        <span>loading..</span>
+        <Spin />
       )}
       {/* <div className="playerblocker"></div> */}
     </div>

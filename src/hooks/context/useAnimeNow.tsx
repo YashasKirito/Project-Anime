@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import API from "../../API";
 import IAnimeEntry from "../../types/animeEntry";
-import { getTrendingAnime } from "../../Utils/AnimeApiHelpers";
+import { getTopAiringAnime } from "../../Utils/AnimeApiHelpers";
 
 type IAnimeNow = {
   animeEntries: IAnimeEntry[];
@@ -13,7 +13,7 @@ export const AnimeNowContext: React.FC = ({ children }) => {
   const [animeEntries, setAnimeEntries] = useState<IAnimeEntry[]>([]);
 
   useEffect(() => {
-    const { url, params } = getTrendingAnime();
+    const { url, params } = getTopAiringAnime();
     animeEntries.length === 0 &&
       API.get(url, params)
         .then((res) => setAnimeEntries(res.data.data))
